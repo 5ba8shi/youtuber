@@ -20,3 +20,6 @@ Route::post('/contact/confirm', 'ContactsController@confirm')->name('contacts.co
 Route::post('/contact/thanks', 'ContactsController@send')->name('contacts.send');
 
 Route::get('/{id}', 'EntriesController@view');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
